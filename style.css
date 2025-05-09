@@ -1,0 +1,276 @@
+/*Variables para el tema del sitio web*/
+
+:root {
+    --primary: #9c0404;
+    --secundary: #2e4469;
+    --background: #35495e;
+    --black-text: rgb(61, 61, 61);
+    --white-text: #fff;
+    --button-hover: #753838;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    color: var(--white-text);
+    font-size: 2rem;
+    letter-spacing: 0.7rem;
+}
+
+header h1 img{
+    width: 30px;
+    height: 30px;
+    
+}
+
+nav {
+    background-color: var(--primary);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+nav ul {
+    display: inline-flex;
+}
+
+nav ul li {
+    border-right: solid .1rem var(--black-text);
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a {
+    color: var(--white-text);
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    text-transform: uppercase;
+}
+
+nav ul li:hover {
+    background-color: var(--button-hover);
+    transition: all 0.3s;
+}
+b{
+    color: aliceblue;
+}
+
+.drawer {
+    color: var(--white-text);
+    float: left;
+    cursor: pointer;
+    display: none;
+    margin-left: 1rem;
+    border: solid 0.1rem var(--white-text);
+    padding: .2rem;
+    border-radius: .1rem;
+}
+
+#ckbox {
+    display: none;
+}
+
+
+/*Estilos a la parte principal de la web*/
+
+main {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: rgba(9,14,23,255)
+}
+
+main h1 {
+    font-size: 1.7rem;
+    color: var(--black-text);
+    text-align: center;
+    margin: 1rem;
+}
+
+main p {
+    color: var(--black-text);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+main form {
+    display: flex;
+    justify-content: center;
+}
+
+main form button {
+    margin: 0 0.5rem;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.primary-btn {
+    background-color: var(--primary);
+    color: var(--white-text);
+    border-style: none;
+}
+
+.outline-btn {
+    background-color: var(--white-text);
+    color: var(--primary);
+    border: solid 0.1rem var(--primary);
+}
+
+.primary-btn:hover {
+    background-color: var(--white-text);
+    color: var(--primary);
+    border-style: none;
+    transition: all 0.3s;
+}
+
+.outline-btn:hover {
+    background-color: var(--primary);
+    color: var(--white-text);
+    border-style: none;
+    transition: all 0.3s;
+}
+
+main img {
+    height: 70vh;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--white-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.content{
+    padding-right: 20px;
+    font-size: 1.5rem;
+}
+.image{
+    padding-left: 20px;
+    font-size: 1.5rem;
+}
+/*Estilos para contacto*/
+
+#bodyc{
+    padding-top: 1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: rgba(9,14,23,255);
+    color: var(--white-text);
+    text-align: center;
+}
+
+.formc{
+    text-align: center;
+    margin: auto;
+    width: 50vh;
+    height: 50vh;
+    border: 5px outset rgb(232, 245, 168);
+    border-radius: 10px;
+    font-size: 30px;
+    align-items: center;
+}
+
+label{
+    margin-bottom: 10px;   
+    display: block;
+    padding: 10px;
+    
+}
+.boton{
+    font-size: 10rem;
+    border: 1px solid rgb(190, 17, 17);
+    border-radius: 5px;
+    font-size: 18px;
+    
+    background-color: lightblue;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+}
+.boton:hover{
+    background: white;
+}
+
+/*Estilos para quién soy*/
+
+h3{
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(152, 146, 75);
+}
+/*Estilos para experiencia*/
+
+#est{
+    padding-right: 300px;
+}
+
+/***************************************************************************/
+
+@media(max-width:1020px) {
+    nav {
+        justify-content: flex-start;
+    }
+    .drawer {
+        display: block;
+    }
+    nav h1 {
+        margin-left: 1rem;
+    }
+    ul {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background-color: var(--background);
+        top: 10vh;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+    }
+    nav ul li {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        border-bottom: solid .1rem rgba(201, 196, 196, 0.4);
+    }
+    #ckbox:checked~.menu-box {
+        left: 0;
+    }
+    .image {
+        display: none;
+    }
+    footer {
+        text-align: center;
+       
+    }
+}

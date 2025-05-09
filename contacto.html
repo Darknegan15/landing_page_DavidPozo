@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/cruz.png"  type="image/x-icon">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <h1><img src="img/cruz.png" alt="Logo">  David Pozo Plumed</h1>
+            <ul class="menu-box">
+                <li>
+                    <a href="index.html" class="fa fa-home">Inicio</a>
+                </li>
+                <li>
+                    <a href="quienSoy.html" class="fa fa-address-card-o">Quién Soy</a>
+                </li>
+                <li>
+                    <a href="experiencia.html" class="fa fa-trophy">Experiencia y Proyectos</a>
+                </li>
+                <li>
+                    <a href="valores.html" class="fa fa-eye">Valores y Filosofía</a>
+                </li>
+                <li>
+                    <a href="skills.html" class="fa fa-laptop">Habilidades</a>
+                </li>
+                <li>
+                    <a href="contacto.html" class="	fa fa-envelope">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="bodyc">
+    <h2 class="h2">FORMULARIO DE CONTACTO</h2>
+
+    <form action="david.pozo.plumed@gmail.com" class="formc">
+        <fieldset>
+            <legend>Mándale un mensaje a David</legend>
+            
+            <label for="nombre">*Nombre/Organización
+                <input type="text" name="nombre" id="nombre" required>
+            </label>
+
+            
+            <label for="tlf">Telefono:
+                <input type="text" name="tlf" id="tlf">
+            </label>
+
+            <label for="email">*Email:
+                <input type="text" name="email" id="email" required>
+            </label>
+            <legend>Mensaje</legend>
+                <textarea name="ayuda" id="otro" style="resize: none; height: 70px;width: 450px;"></textarea>
+        
+        <div>
+            <input class="boton" type="submit" value="Enviar">
+            <input class="boton" type="reset" value="Restablecer">
+        </div>
+    </form>
+</main>
+<footer>
+    <p><h2>Esposo - Papá - Pastor - Programador</h2></p>
+</footer>
+</body>
+</html>
