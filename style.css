@@ -225,15 +225,19 @@ h3{
     text-align: center;
     color: rgb(152, 146, 75);
 }
-/*Estilos para experiencia*/
+/*Estilos para experiencia/CV*/
 
 #est{
     padding-right: 300px;
 }
-
+ 
+.show{
+    width: 18vh;
+    height: 15vh;
+}
 /***************************************************************************/
 
-@media(max-width:1020px) {
+@media(max-width:992px) {
     nav {
         justify-content: flex-start;
     }
@@ -274,3 +278,46 @@ h3{
        
     }
 }
+
+@media(max-width:576px) {
+    nav {
+        justify-content: flex-start;
+    }
+    .drawer {
+        display: block;
+    }
+    nav h1 {
+        margin-left: 1rem;
+    }
+    ul {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background-color: var(--background);
+        top: 10vh;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+    }
+    nav ul li {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        border-bottom: solid .1rem rgba(201, 196, 196, 0.4);
+    }
+    #ckbox:checked~.menu-box {
+        left: 0;
+    }
+    .image {
+        display: none;
+    }
+    footer {
+        text-align: center;
+       
+    }
+}
+
