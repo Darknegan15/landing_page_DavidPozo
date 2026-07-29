@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"><link rel="shortcut icon" href="img/cruz.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script><title>Contacto | David Pozo Plumed</title>
+</head>
+<body>
+    <header><nav>
+        <input type="checkbox" id="ckbox"><label for="ckbox" class="drawer" aria-label="Abrir menú"><i class="fa fa-bars"></i></label>
+        <h1><img src="img/cruz.png" alt="Logo">David Pozo Plumed</h1>
+        <ul class="menu-box">
+            <li><a href="index.html" class="fa fa-home">Inicio</a></li><li><a href="quienSoy.html" class="fa fa-address-card-o">Quién Soy</a></li>
+            <li><a href="experiencia.html" class="fa fa-trophy">Curriculum</a></li><li><a href="valores.html" class="fa fa-eye">Valores y Filosofía</a></li>
+            <li><a href="skills.html" class="fa fa-laptop">Habilidades</a></li><li><a href="contacto.html" class="fa fa-envelope">Contacto</a></li>
+        </ul>
+    </nav></header>
+    <main id="bodyc">
+        <span class="eyebrow"><i></i> Hablemos</span>
+        <h2 class="h2">FORMULARIO DE CONTACTO</h2>
+        <form action="https://formsubmit.co/david.pozo.plumed@gmail.com" method="POST" class="formc">
+            <fieldset>
+                <legend>Mándale un mensaje a David</legend>
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio de David">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
+                <label for="nombre">*Nombre/Organización<input type="text" name="nombre" id="nombre" required autocomplete="name"></label>
+                <label for="tlf">Teléfono:<input type="text" name="tlf" id="tlf" autocomplete="tel"></label>
+                <label for="email">*Email:<input type="email" name="email" id="email" required autocomplete="email"></label>
+                <label for="otro">Mensaje<textarea name="mensaje" id="otro" required></textarea></label>
+                <div class="form-actions"><input class="boton" type="submit" value="Enviar"><input class="boton" type="reset" value="Restablecer"></div>
+            </fieldset>
+        </form>
+    </main>
+    <footer><h2>Esposo - Papá - Pastor - Programador</h2></footer>
+</body>
+</html>

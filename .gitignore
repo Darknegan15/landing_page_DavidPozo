@@ -1,0 +1,8 @@
+# Instrucciones locales y archivos auxiliares
+AGENTS.md
+Link repo.txt
+
+# Archivos del sistema y del editor
+.DS_Store
+Thumbs.db
+.vscode/
